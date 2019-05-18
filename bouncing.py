@@ -17,7 +17,7 @@ def bouncing(desired_percentage):
     """
     LOOPS THROUGH NUMBERS APPENDING THE BOUNCING ONES TO A LIST AND USES IT'S LENGHT TO CALCULATE PERCENTAGE
     """
-    while percentage != desired_percentage and percentage < desired_percentage:
+    while percentage < desired_percentage:
         last_percentage = percentage
         if ''.join(sorted(str(number))) == str(number) or ''.join(sorted(str(number), reverse=True)) == str(number):
             pass
